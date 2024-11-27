@@ -46,6 +46,7 @@ jobs:
           fi
           echo "El quality gate fue pasado con éxito"
   docker_build:
+    needs: sonarcloud
     name: Docker Build
     runs-on: ubuntu-latest
     steps:
