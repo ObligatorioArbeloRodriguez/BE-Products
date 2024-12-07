@@ -7,11 +7,10 @@ on:
 
 jobs:
     ir_a_buscar_yml_a_principal:
-        name: Ir a buscar el yml de repo Principal
+        name: Principal
         uses: ObligatorioArbeloRodriguez/Principal/.github/workflows/main.yml@main
         with:
             app_name: be-products
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Products
             nombre_repo_ecr: products-repo
-        secrets:
-            inherit
+        secrets: inherit
